@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] | Stephen Babatunde</title>
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+</head>
+
+<body>
+    <header class="site-header">
+        <nav class="nav-wrap" aria-label="Main navigation"><a class="brand" asp-controller="Home" asp-action="Index"><span>SB</span> Stephen Babatunde</a>
+        <div class="nav-links">
+        <a asp-controller="Home" asp-action="Index">Home</a>
+            <a asp-controller="Home" asp-action="Courses">Courses</a>
+            <a asp-controller="Home" asp-action="About">About Me</a>
+        </div>
+
+        </nav>
+
+    </header>
+        
+     <main class="site-main">@RenderBody()</main>
+     
+     <footer class="site-footer">
+        <p>© 2026 Stephen Babatunde · Web Developer</p>
+    </footer>
+        </body>
+        </html>

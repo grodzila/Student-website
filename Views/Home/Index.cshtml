@@ -1,0 +1,26 @@
+    @model Student
+@{ ViewData["Title"] = "Home"; }
+<section class="hero">
+    <div class="hero-copy">
+        <p class="eyebrow">Hello, I’m @Model.Name</p>
+        <h1>Learning to make <em>useful things</em> for the web.</h1>
+        <p class="hero-text">@Model.Introduction I am currently a @Model.Year in the @Model.Program program.</p>
+        <a class="primary-button" asp-action="Courses">Explore my courses <span>→</span></a>
+    </div>
+    
+</section>
+<section class="flow-section">
+    <div>
+        <p class="eyebrow">How this site works</p>
+        <h2>The MVC flow in action</h2>
+        <p>Every page begins with data and ends with a helpful experience in your browser.</p>
+        </div>
+        <ol class="flow-list">
+            <li><strong>Model</strong><span>Student and course information</span></li>
+            <li><strong>Controller</strong><span>Receives the browser request</span></li>
+            <li><strong>Action</strong><span>Chooses the right page</span></li>
+            <li><strong>View</strong><span>Renders the Razor HTML</span></li>
+            <li><strong>Browser</strong><span>Displays the finished page</span></li>
+        </ol>
+    </div>
+</section>

@@ -1,0 +1,13 @@
+@model IEnumerable<Course>
+@{ ViewData["Title"] = "Courses"; }
+<section class="page-heading">
+    <p class="eyebrow">This semester</p>
+    <h1>Courses I am taking</h1>
+    <p>Each course is helping me grow into a more capable, thoughtful developer.</p></section>
+<section class="course-grid" aria-label="Current courses">
+@foreach (var course in Model) { <article class="course-card">
+    <span class="course-code">@course.Code</span>
+    <h2>@course.Title</h2>
+    <p>@course.Description</p>
+</article> }
+</section>

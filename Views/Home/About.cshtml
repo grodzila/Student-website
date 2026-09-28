@@ -1,0 +1,23 @@
+@model Student
+@{ ViewData["Title"] = "About Me"; }
+<section class="page-heading">
+    <p class="eyebrow">A little more about me</p>
+    <h1>Beyond the classroom</h1>
+    <p>@Model.Background</p>
+</section>
+<section class="about-grid">
+    <article class="info-card">
+        <span class="card-icon">✦</span>
+        <h2>My interests</h2>
+        <ul class="interest-list">
+            @foreach (var interest in Model.Interests) {
+                <li>@interest</li>
+            }
+        </ul>
+    </article>
+    <article class="info-card accent-card">
+        <span class="card-icon">↗</span>
+        <h2>Career goal</h2>
+        <p>@Model.CareerGoal</p>
+    </article>
+</section>

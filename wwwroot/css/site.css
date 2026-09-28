@@ -1,0 +1,199 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,600;9..40,700&family=Playfair+Display:ital,wght@0,600;0,700;1,600&display=swap');
+:root{--ink:#162520;--cream:#f7f4ed;--lime:#cef26a;--coral:#ff947a;--muted:#66736d;--line:#d9ddd3}
+
+*{box-sizing:border-box}
+
+body{
+    margin:0;background:var(--cream);color:var(--ink);font-family:'DM Sans',Arial,sans-serif
+}
+
+.site-header{
+    border-bottom:1px solid var(--line)
+}
+
+.nav-wrap,.site-main,.site-footer{
+    width:min(1120px,calc(100% - 40px));margin:auto
+}
+    
+.nav-wrap{
+    min-height:76px;display:flex;align-items:center;justify-content:space-between;gap:20px
+}
+
+.brand{
+    color:var(--ink);font-weight:700;text-decoration:none;display:flex;gap:10px;align-items:center
+}
+
+.brand span{
+    background:var(--ink);color:var(--lime);border-radius:50%;padding:7px 6px;font:500 11px 'DM Mono'
+}
+    
+.nav-links{
+    display:flex;gap:30px
+}
+
+.nav-links a{
+    color:var(--muted);font-size:.94rem;text-decoration:none;font-weight:600
+}
+
+.nav-links a:hover{
+    color:var(--ink)
+}
+.site-main{
+    padding:60px 0 78px;min-height:calc(100vh - 142px)
+}
+
+.hero{
+    display:grid;grid-template-columns:1.18fr .82fr;gap:54px;align-items:center;min-height:470px
+}
+
+.eyebrow{
+    margin:0 0 16px;color:#50634d;text-transform:uppercase;letter-spacing:.13em;font:500 .72rem 'DM Mono',monospace
+}
+
+h1,h2,p{
+    margin-top:0
+}
+
+.hero h1{
+    font:700 clamp(3rem,6vw,5.3rem)/.99 'Playfair Display',Georgia,serif;letter-spacing:-.055em;max-width:670px;margin-bottom:28px
+}
+
+.hero h1 em{
+    color:#507657
+}
+
+.hero-text,.page-heading>p{
+    color:var(--muted);line-height:1.7;max-width:590px;font-size:1.08rem
+}
+
+.primary-button{
+    display:inline-flex;gap:18px;align-items:center;margin-top:16px;background:var(--ink);color:white;padding:14px 18px;border-radius:999px;text-decoration:none;font-weight:600
+}
+
+.primary-button span{
+    color:var(--lime);font-size:1.3rem
+}
+
+.hero-art{
+    height:340px;position:relative;overflow:hidden;border-radius:48% 52% 45% 55%/43% 42% 58% 57%;background:var(--lime);display:grid;place-items:center;transform:rotate(-4deg)
+}
+
+.hero-initials{
+    color:var(--ink);font:700 7rem/1 'Playfair Display';letter-spacing:-.1em;z-index:2;transform:rotate(4deg)
+}
+
+.orbit{
+    position:absolute;border:1px solid rgba(22,37,32,.32);border-radius:50%
+}
+
+.orbit-one{
+    height:305px;width:305px
+}
+
+.orbit-two{
+    height:210px;width:390px;transform:rotate(-42deg)
+}
+
+.spark{
+    position:absolute;z-index:3;color:var(--coral);font-size:2rem
+}
+
+.spark-one{
+    top:52px;right:61px
+}
+
+.spark-two{
+    bottom:48px;left:49px;font-size:1.3rem
+}
+
+.flow-section{
+    display:grid;grid-template-columns:.75fr 1.25fr;gap:54px;margin-top:80px;padding:42px 0;border-top:1px solid var(--line)
+}
+
+.flow-section h2,.page-heading h1{
+    font:700 2.25rem/1.05 'Playfair Display';letter-spacing:-.04em
+}
+
+.flow-section>div>p:last-child{
+    color:var(--muted);line-height:1.6
+}
+
+.flow-list{
+    margin:0;padding:0;list-style:none;display:grid;grid-template-columns:repeat(5,1fr);gap:8px
+}
+
+.flow-list li{
+    border-top:3px solid var(--ink);padding:12px 7px 0 0
+}
+
+.flow-list strong{
+    display:block;font-size:.9rem
+}
+
+.flow-list span{
+    color:var(--muted);display:block;font-size:.74rem;line-height:1.35;margin-top:6px
+}
+
+.page-heading{
+    max-width:700px;margin-bottom:44px
+}
+
+.page-heading h1{
+    font-size:clamp(2.8rem,5vw,4.2rem);margin-bottom:20px
+}
+
+.course-grid,.about-grid{
+    display:grid;grid-template-columns:repeat(2,1fr);gap:18px
+}
+
+.course-card,.info-card{
+    background:#fffdf8;border:1px solid var(--line);border-radius:18px;padding:27px
+}
+
+.course-card:nth-child(2),.accent-card{background:var(--lime);border-color:var(--lime)
+}
+
+.course-card:nth-child(3){background:#edf1ea
+}
+
+
+.course-code{
+    color:#587152;font:500 .73rem 'DM Mono'
+}
+
+.course-card h2,.info-card h2{
+    margin:17px 0 9px;font:600 1.43rem 'Playfair Display'
+}
+
+.course-card p,.info-card p{
+    color:var(--muted);line-height:1.6;margin:0
+}
+
+.accent-card p{
+    color:#33452f
+}
+
+.card-icon{
+    font-size:1.5rem;color:#587152
+}
+
+.interest-list{
+    padding:0;margin:16px 0 0;list-style:none
+}
+
+.interest-list li{
+    border-top:1px solid var(--line);padding:10px 0
+}
+
+.interest-list li:before{
+    content:'→';color:#587152;margin-right:9px
+}
+
+.site-footer{
+    border-top:1px solid var(--line);padding:22px 0;color:var(--muted);font-size:.82rem
+}
+
+
+
+@media(max-width:720px){.nav-wrap{min-height:100px;align-items:flex-start;padding-top:20px;flex-direction:column}
+.nav-links{gap:17px}.site-main{padding-top:42px}.hero,.flow-section{grid-template-columns:1fr;gap:30px}.flow-section{margin-top:55px}.flow-list{grid-template-columns:repeat(2,1fr);gap:18px}.course-grid,.about-grid{grid-template-columns:1fr}}
